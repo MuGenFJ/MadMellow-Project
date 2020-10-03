@@ -457,7 +457,7 @@ img.burgerBtn-hover{
     width: 30%;
     margin: 0 auto;
     font-size: .8rem;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 @media (max-width:865px){
