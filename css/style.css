@@ -416,6 +416,7 @@ img.burgerBtn-hover{
 
 .about-title h3{
     letter-spacing: 8px;
+    text-transform: uppercase;
     font-size: 1rem;
 }
 
@@ -796,7 +797,7 @@ ul.filter-menu li span:hover {
 
 .contact-container{
     height: 448px;
-    width: 60vw;
+    width: 68vw;
     background-color: black;
     margin: 0 auto;
 }
@@ -819,16 +820,19 @@ ul.filter-menu li span:hover {
     }  
 }
 
-.get-in-touch-box{
-    text-align: center;
-}
 
 .get-in-touch-box{
     color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .contact-box-title h3{
-    padding-top: 50px;
     font-size: 2.2rem;
 }
 
@@ -955,8 +959,8 @@ ul.filter-menu li span:hover {
 }
 
 
-/*Bistro_LeDuc-Section*/
-#bistroleduc{
+/*Projects-Section*/
+#projects{
     background-color: rgb(230, 230, 230);
     height: 100%;
     width: 100%;
@@ -964,30 +968,57 @@ ul.filter-menu li span:hover {
     overflow: hidden;
     transition: background-color .5s linear;
 }
-#bistroleduc.dark{
+#projects.dark{
     background-color: rgb(31, 31, 31);
 }
 
-#bistroleduc .banner {
+.banner {
     width: 100%;
-    height: 300px;
+    height: 450px;
     position: relative;
     margin-bottom: 30px;
 }
 
-#bistroleduc .banner img {
+.banner img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-@media (max-width:755px){
-    #bistroleduc .banner img {
-        height: 250px;
+
+.banner h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-size: 6rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.815);
+    transition: background-color .5s linear;
+}
+#projects.dark .banner h1{
+    color: rgba(255, 255, 255, 0.692);
+}
+
+@media (max-width: 1200px){
+    #projects .banner h1 {
+        font-size: 5rem;
     }
 }
-@media (max-width:530px){
-    #bistroleduc .banner img {
-        height: 200px;
+@media (max-width: 780px){
+    #projects .banner h1 {
+        font-size: 4rem;
+    }
+}
+@media (max-width: 530px){
+    #projects .banner h1 {
+        font-size: 3.5rem;
+    }
+}
+@media (max-width: 455px){
+    #projects .banner h1 {
+        font-size: 2.5rem;
     }
 }
 
@@ -1011,87 +1042,58 @@ ul.filter-menu li span:hover {
     }
 }
 
-#bistroleduc .arrow-next{
+.arrow-next{
+    position: absolute;
     top: 50%;
     left: 100%;
     transform: translate(-50%, -50%);
     font-size: 3rem;
     color: black;
     transition: background-color .5s linear;
+    cursor: pointer;
 }
 @media (max-width: 460px){
-    #bistroleduc .arrow-next{
+    .arrow-next{
         left: 110%;
     }
 }
 
-#bistroleduc .arrow-prev{
+.arrow-prev{
+    position: absolute;
     top: 50%;
     left: -5%;
     transform: translate(-50%, -50%);
     font-size: 3rem;
     color: black;
     transition: background-color .5s linear;
+    cursor: pointer;
 }
 @media (max-width: 460px){
-    #bistroleduc .arrow-prev{
+    .arrow-prev{
         left: -10%;
     }
 }
-#bistroleduc.dark .arrow-next, #bistroleduc.dark .arrow-prev{
+#projects.dark .arrow-next, #projects.dark .arrow-prev{
     color: rgba(255, 255, 255, 0.377)
 }
 
-#bistroleduc .slick-slide{
+#projects .slick-slide{
     height: 300px;
 }
 
 
-#bistroleduc .slick-slide img{
+#projects .slick-slide img{
     height: 100%;
     width: 90%;
 }
 @media (max-width: 460px){
-    #bistroleduc .slick-slide img{
+    #projects .slick-slide img{
         width: 100%;
     } 
 }
 
-#bistroleduc .banner h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    font-size: 6rem;
-    text-align: center;
-    text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.815);
-    transition: background-color .5s linear;
-}
-#bistroleduc.dark .banner h1{
-    color: rgba(255, 255, 255, 0.692);
-}
-
-@media (max-width: 1200px){
-    #bistroleduc .banner h1 {
-        font-size: 5rem;
-    }
-}
-@media (max-width: 780px){
-    #bistroleduc .banner h1 {
-        font-size: 4rem;
-    }
-}
-@media (max-width: 530px){
-    #bistroleduc .banner h1 {
-        font-size: 3.5rem;
-    }
-}
-@media (max-width: 455px){
-    #bistroleduc .banner h1 {
-        font-size: 2.5rem;
-    }
+.lb-data .lb-details {
+    display: none;
 }
 
 .btn-back{
@@ -1104,7 +1106,7 @@ ul.filter-menu li span:hover {
     font-size: 2rem;
     transition: background-color .5s linear;
 }
-#bistroleduc.dark .btn-back .fas{
+#projects.dark .btn-back .fas{
     color: white;
 }
 
@@ -1116,7 +1118,7 @@ ul.filter-menu li span:hover {
     color: black;
     transition: background-color .5s linear;
 }
-#bistroleduc.dark .information-container{
+#projects.dark .information-container{
     color: white;
 }
 @media (max-width: 1200px){
