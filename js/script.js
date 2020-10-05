@@ -94,7 +94,7 @@ const aboutbg = document.getElementById('about');
 const portfolio = document.getElementById('portfolio');
 //   const testimonials = document.getElementById('testimonials');
 const contact = document.getElementById('contact');
-const bistroleduc = document.getElementById('bistroleduc');
+const projects = document.getElementById('projects');
 
 checkbox.addEventListener('change', () => {
 	homebg.classList.toggle('dark');
@@ -103,5 +103,5 @@ checkbox.addEventListener('change', () => {
 	portfolio.classList.toggle('dark');
 	//   testimonials.classList.toggle('dark');
 	contact.classList.toggle('dark');
-	bistroleduc.classList.toggle('dark');
+	projects.classList.toggle('dark');
 });
