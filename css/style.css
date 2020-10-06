@@ -878,7 +878,7 @@ ul.filter-menu li span:hover {
     color: white;
     background: black;
     border: 1px solid white;
-    padding: 10px 25px;
+    padding: 15px 30px;
     cursor: pointer;
 }
 @media (max-width: 500px){
