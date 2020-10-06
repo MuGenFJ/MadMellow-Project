@@ -243,7 +243,7 @@ img.burgerBtn-hover{
 
 /*landing-page*/
 #home{
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     background-color: white;
     overflow: hidden;
@@ -251,13 +251,11 @@ img.burgerBtn-hover{
 }
 #home.dark{
     background-color: black;
-
 }
 
 .landing-page-content{
     width: 100%;
     height: 90%;
-    display: flex;
 }
 
 .section-img-bg{
@@ -271,7 +269,7 @@ img.burgerBtn-hover{
     position: relative;
     transition: background .5s linear;
 }
-@media(max-width:680px){
+@media(max-width:1000px){
     .bg-fluid{
         background-size: 400px;
     }
@@ -292,7 +290,7 @@ img.burgerBtn-hover{
     background-size: 600px;
     position: relative;
 }
-@media(max-width:680px){
+@media(max-width:1000px){
     #sectionbg.dark.bg-fluid{
         background-size: 400px;
     }
@@ -305,63 +303,68 @@ img.burgerBtn-hover{
 
 .info-title{
     position: absolute;
-    width: 30%;
+    width: 40%;
     color: black;
-    top: 33%;
-    left: 25%;
-    transform: translate(-50%,-50%);
-    
-    /* background-color: rgba(255, 255, 255, 0.788); */
+    left: 0%;
+    top: 20%;
+    margin-left: 20px;
 }
 
-@media (max-width:990px){
+@media(max-width:980px){
     .info-title{
-        top: 90%;
-        width: 60%;
-        margin-left: 100px;
+    width: 40%;
+    color: black;
+    left: 0%;
+    top: 15%;
     }
 }
-@media (max-width:500px){
+@media(max-width:830px){
     .info-title{
-        width: 80%;
+    width: 60%;
+    color: black;
+    left: 0%;
+    top: 70%;
     }
 }
 
-#sectionbg.dark .info-title{
+
+
+#sectionbg.dark  .info-title{
     color: white;
-    /* background-color: rgba(0, 0, 0, 0.801); */
 }
 
 .info-title h5{
     text-transform: uppercase;
-    font-size: .8rem;
+    font-size: .9rem;
     letter-spacing: 8px;
     margin-bottom: 15px;
 }
-@media (max-width: 400px){
-    .info-title h5{
-        font-size: .6rem;
-    }
-}
+
 
 .info-title h3{
     text-transform: uppercase;
-    font-size: 1.8rem;
+    font-size: 2.3rem;
     margin-bottom: 15px;
 }
-@media (max-width: 400px){
+@media(max-width:1000px){
     .info-title h3{
-        font-size: 1.5rem;
+    font-size: 2rem;
+    }
+}
+@media(max-width:830px){
+    .info-title h3{
+    font-size: 1.5rem;
     }
 }
 
 .info-title p{
-    font-size: .6rem;
-    width: 80%;
+    font-size: 1rem;
+    width: 85%;
 }
-@media (max-width: 400px){
+@media (max-width: 1000px){
     .info-title p{
-    width: 90%;
+    font-size: .8rem;
+    width: 95%;
     }   
 }
 
@@ -417,7 +420,7 @@ img.burgerBtn-hover{
 .about-title h3{
     letter-spacing: 8px;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.6rem;
 }
 
 .about-title h1{
@@ -425,7 +428,7 @@ img.burgerBtn-hover{
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 12rem;
+    font-size: 15rem;
     width: 100%;
     opacity: .3;
     color: rgb(47, 0, 80);
@@ -436,6 +439,11 @@ img.burgerBtn-hover{
 
 }
 
+@media (max-width: 1060px) {
+    .about-title h1{
+        font-size: 12rem;
+    }
+}
 @media (max-width: 855px) {
     .about-title h1{
         font-size: 8rem;
@@ -453,15 +461,15 @@ img.burgerBtn-hover{
 }
 
 .about-title p{
-    width: 30%;
+    width: 40%;
     margin: 0 auto;
-    font-size: .8rem;
+    font-size: 1rem;
     margin-top: 20px;
 }
 
 @media (max-width:865px){
     .about-title p{
-        width: 50%;
+        width: 65%;
     }
 }
 
@@ -492,18 +500,18 @@ img.burgerBtn-hover{
 .portfolio-title h4{
     margin-bottom: 25px;
     text-transform: uppercase;
-    font-size: .8rem;
+    font-size: 1.6rem;
     letter-spacing: 8px;
 }
 
 .portfolio-title h1{
     margin-bottom: 25px;
-    font-size: 3rem;
+    font-size: 3.5rem;
     letter-spacing: 2px;
 }
 
 .portfolio-title h3{
-    font-size: .7rem;
+    font-size: 1.2rem;
 }
 
 /*filter*/
@@ -521,6 +529,12 @@ ul.filter-menu {
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
+}
+@media (max-width:520px){
+    ul.filter-menu {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 ul.filter-menu li {
@@ -833,7 +847,7 @@ ul.filter-menu li span:hover {
 }
 
 .contact-box-title h3{
-    font-size: 2.2rem;
+    font-size: 2.3rem;
 }
 
 .contact-box-title p{
@@ -859,6 +873,7 @@ ul.filter-menu li span:hover {
     width: 100%;
     margin-bottom: 10px;
     padding-bottom: 10px;
+    font-size: 1rem;
 }
 .contact-form .email-input{
     background: black;
@@ -870,6 +885,7 @@ ul.filter-menu li span:hover {
     width: 100%;
     margin-top: 30px;
     padding-bottom: 10px;
+    font-size: 1rem;
 }
 
 .contact-form .btn-submit{
@@ -880,7 +896,10 @@ ul.filter-menu li span:hover {
     border: 1px solid white;
     padding: 15px 30px;
     cursor: pointer;
+    font-size: 1rem;
+
 }
+
 @media (max-width: 500px){
     .contact-form .btn-submit{
         font-size: .7rem;
