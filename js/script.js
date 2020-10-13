@@ -98,5 +98,5 @@ checkbox.addEventListener('change', () => {
 	portfolio.classList.toggle('dark');
 	//   testimonials.classList.toggle('dark');
 	contact.classList.toggle('dark');
-	projects.classList.toggle('dark');
+	// projects.classList.toggle('dark');
 });

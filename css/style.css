@@ -23,7 +23,8 @@ body{
     z-index: 200;
 }
 
-.preloader img{
+.preloader-img{
+    background: url(/img/splashscreen_madmellow.gif)  no-repeat ;
     position: fixed;
     background-position: center center;
     background-size: cover;
@@ -243,7 +244,7 @@ img.burgerBtn-hover{
 
 /*landing-page*/
 #home{
-    height: 110vh;
+    height: 1000px;
     width: 100%;
     background-color: white;
     overflow: hidden;
@@ -255,7 +256,7 @@ img.burgerBtn-hover{
 
 .landing-page-content{
     width: 100%;
-    height: 90%;
+    height: 100%;
 }
 
 .section-img-bg{
@@ -265,10 +266,11 @@ img.burgerBtn-hover{
     height: 100%;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 600px;
+    background-size: 750px;
     position: relative;
     transition: background .5s linear;
 }
+
 @media(max-width:1000px){
     .bg-fluid{
         background-size: 400px;
@@ -277,6 +279,8 @@ img.burgerBtn-hover{
 @media(max-width:480px){
     .bg-fluid{
         background-size: 300px;
+        top: -180px;
+
     }
 }
 
@@ -287,7 +291,7 @@ img.burgerBtn-hover{
     height: 100%;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 600px;
+    background-size: 750px;
     position: relative;
 }
 @media(max-width:1000px){
@@ -297,7 +301,7 @@ img.burgerBtn-hover{
 }
 @media(max-width:480px){
     #sectionbg.dark.bg-fluid{
-        background-size: 300px;
+        background-size: 380px;
     }
 }
 
@@ -320,7 +324,7 @@ img.burgerBtn-hover{
 }
 @media(max-width:830px){
     .info-title{
-    width: 60%;
+    width: 65%;
     color: black;
     left: 0%;
     top: 70%;
@@ -354,6 +358,11 @@ img.burgerBtn-hover{
 @media(max-width:830px){
     .info-title h3{
     font-size: 1.5rem;
+    }
+}
+@media(max-width:350px){
+    .info-title h3{
+    font-size: 1.2rem;
     }
 }
 
