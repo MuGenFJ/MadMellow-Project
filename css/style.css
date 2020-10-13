@@ -301,7 +301,8 @@ img.burgerBtn-hover{
 }
 @media(max-width:480px){
     #sectionbg.dark.bg-fluid{
-        background-size: 380px;
+        background-size: 300px;
+        top: -180px;
     }
 }
 
