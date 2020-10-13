@@ -24,7 +24,7 @@ body{
 }
 
 .preloader-img{
-    background: url(/img/splashscreen_madmellow.gif)  no-repeat ;
+    background: url(/img/loader_madmellow.gif)  no-repeat ;
     position: fixed;
     background-position: center center;
     background-size: cover;
