@@ -30,7 +30,7 @@ body{
 
 .preloader-img{
     /* background: url(/img/loader_madmellow.gif)  no-repeat ; */
-    content: url(/img/loader_madmellow.gif);
+    content: url(./img/loader_madmellow.gif);
     width: 100%;
     height: 100%;
     /* position: fixed;
@@ -45,7 +45,7 @@ body{
 
 @media (max-width:650px){
     .preloader-img{
-        content: url(/img/anim_madmellow_phone.gif);
+        content: url(./img/anim_madmellow_phone.gif);
     }
 }
 
