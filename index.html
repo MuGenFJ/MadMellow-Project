@@ -343,3 +343,29 @@
 </body>
 
 </html>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#reset").on("submit", function (e) {
+            e.preventDefault();
+            $("#btn").attr("disabled", true);
+            $("#btn").val("Please wait...");
+            $.ajax({
+                url: "process.php",
+                method: "post",
+                data: new FormData(this),
+                contentType: false,
+                cache: false,
+                processData: false,
+                success: function (data) {
+                    $("#msg").html(data);
+                    $("#btn").attr("disabled", false);
+                    $("#btn").val("Send Now");
+
+                }
+            });
+
+        });
+    });
+
+</script>
