@@ -9,13 +9,13 @@ function overlayMenu() {
 }
 
 // Preloader //
-const preloader = document.querySelector('.preloader');
+// const preloader = document.querySelector('.preloader');
 
-document.addEventListener('DOMContentLoaded', (e) => {
-	setTimeout(() => {
-		preloader.classList.add('display-none');
-	}, 5200);
-})
+// document.addEventListener('DOMContentLoaded', (e) => {
+// 	setTimeout(() => {
+// 		preloader.classList.add('display-none');
+// 	}, 5200);
+// })
 
 // Filter Grid //
 $(document).ready(function () {
