@@ -196,7 +196,7 @@ img.burgerBtn-hover {
 }
 
 .links li {
-  margin: 0px 50px;
+  margin: 0px 40px;
 }
 @media (max-width: 1168px) {
   .links li {
@@ -217,6 +217,7 @@ img.burgerBtn-hover {
 
 .links li a:hover {
   color: white;
+  font-weight: 600;
 }
 
 .close-btn {
@@ -564,7 +565,7 @@ ul.filter-menu li span {
 
 ul.filter-menu li.active span,
 ul.filter-menu li span:hover {
-  color: black;
+  color: #003c87;
   border-bottom: 5px solid #003c87;
   width: 100%;
 }
