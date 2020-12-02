@@ -25,10 +25,6 @@
     <header>
         <div class="navi-container">
             <div class="navi-bar">
-                <div class="logo">
-                    <a href="../index.html"><img src="../img/logo_white.svg" alt="logo-img" class="logo-img"></a>
-                    <a href="./coming-soon.html"><img src="../img/logo_white.svg" alt="logo-img" class="logo-img"></a>
-                </div>
                 <div class="lightdark">
                     <input type="checkbox" class="checkbox" id="chk" />
                     <label class="label" for="chk">
@@ -36,6 +32,11 @@
                         <i class="fas fa-sun"></i>
                         <div class="ball"></div>
                     </label>
+                </div>
+                <div class="logo">
+                    <a href="../index.html"><img src="../img/MM_contract_white.svg" alt="logo-img" class="logo-img"></a>
+                    <a href="../pages/coming-soon.html"><img src="../img/MM_individual_white.svg" alt="logo-img"
+                            class="logo-img"></a>
                 </div>
                 <div class="burger-menu">
                     <span class="open-btn" id="toggle-btn" onclick="overlayMenu()"><img src="../img/burgermenu.png"
@@ -49,15 +50,15 @@
             <span class="close-btn" id="toggle-btn" onclick="overlayMenu()">&times;</span>
             <div class="menu-content">
                 <ul class="links">
-                    <li class="link"><a href="../index.html#home">Home</a></li>
-                    <li class="link"><a href="../index.html#about">About</a></li>
-                    <li class="link"><a href="../index.html#portfolio">Portfolio</a></li>
-                    <!-- <li class="link"><a href="../index.html">Blog</a></li> -->
-                    <li class="link"><a href="./contact.html">Contact</a></li>
+                    <li class="link" onclick="overlayMenu()"><a href="../index.html#home">Home</a></li>
+                    <li class="link" onclick="overlayMenu()"><a href="../index.html#portfolio">Portfolio</a></li>
+                    <li class="link" onclick="overlayMenu()"><a href="../index.html#about">About</a></li>
+                    <li class="link" onclick="overlayMenu()"><a href="../pages/contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </header>
+    
     <section class="coming-soon">
         <h1>Page Coming Soon ...</h1>
     </section>
@@ -70,17 +71,16 @@
             <a href="../index.html#home">Home</a>
             <a href="../index.html#about">About</a>
             <a href="../index.html#portfolio">Portfolio</a>
-            <!-- <a href="../index.html">Blog</a> -->
-            <a href="./contact.html">Contact</a>
+            <a href="../pages/contact.html">Contact</a>
         </div>
         <div class="social-media">
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-youtube"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
         </div>
         <span class="signature"> &copy; Madmellow 2020 .All Rights Reserved .Design by VIZIR ARTS</span>
     </footer>
-
 
 
 

@@ -21,17 +21,9 @@
 
 <body>
 
-
-    <!-- <div class="preloader">
-        <div class="preloader-img"></div>
-    </div> -->
     <header>
         <div class="navi-container">
             <div class="navi-bar">
-                <div class="logo">
-                    <a href="./index.html"><img src="./img/logo_white.svg" alt="logo-img" class="logo-img"></a>
-                    <a href="./pages/coming-soon.html"><img src="./img/logo_white.svg" alt="logo-img" class="logo-img"></a>
-                </div>
                 <div class="lightdark">
                     <input type="checkbox" class="checkbox" id="chk" />
                     <label class="label" for="chk">
@@ -39,6 +31,10 @@
                         <i class="fas fa-sun"></i>
                         <div class="ball"></div>
                     </label>
+                </div>
+                <div class="logo">
+                    <a href="./index.html"><img src="./img/MM_contract_white.svg" alt="logo-img" class="logo-img"></a>
+                    <a href="./pages/coming-soon.html"><img src="./img/MM_individual_white.svg" alt="logo-img" class="logo-img"></a>
                 </div>
                 <div class="burger-menu">
                     <span class="open-btn" id="toggle-btn" onclick="overlayMenu()"><img src="./img/burgermenu.png"
@@ -53,9 +49,8 @@
             <div class="menu-content">
                 <ul class="links">
                     <li class="link" onclick="overlayMenu()" ><a href="#home">Home</a></li>
-                    <li class="link" onclick="overlayMenu()" ><a href="#about">About</a></li>
                     <li class="link" onclick="overlayMenu()" ><a href="#portfolio">Portfolio</a></li>
-                    <!-- <li class="link"><a href="#testiomonials">Blog</a></li> -->
+                    <li class="link" onclick="overlayMenu()" ><a href="#about">About</a></li>
                     <li class="link" onclick="overlayMenu()" ><a href="./pages/contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -76,25 +71,6 @@
                         clients a furniture that is truly personal and special to them.
                     </p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="about-page-content">
-            <div class="profil-img" data-aos="fade-right">
-                <img src="./img/about-profile.jpg" alt="profile-img">
-            </div>
-            <div class="about-title">
-                <h3 data-aos="fade-right">Who we are</h3>
-                <h1>About us</h1>
-                <p data-aos="fade-right">
-                    From our Design Studio and Showroom, based in Luxembourg-City, the MadMellow team is accompanying
-                    the client from his initial need, wish and requirement developing it to a vision which then becomes
-                    reality resulting in a high quality exquisite furnishings as
-                    unique as every MadMellow
-                    client.
-                </p>
             </div>
         </div>
     </section>
@@ -200,97 +176,62 @@
         </div>
     </section>
 
-    <!-- <section id="testimonials">
-        <div class="monials-title">
-            <h3>Testimonials</h3>
-            <h5>What they said about us</h5>
+     <section id="about">
+        <div class="about-page-content">
+            <div class="profil-img">
+                <img data-aos="fade-right"  src="./img/about-profile.jpg" alt="profile-img">
+            </div>
+            <div class="about-title">
+                <div class="box1">
+                    <h3>Who we are</h3>
+                    <h1>About us</h1>
+                    <p> 
+                        From our Design Studio and Showroom, based in Luxembourg-City, the MadMellow team is accompanying
+                        the client from his initial need, wish and requirement developing it to a vision which then becomes
+                        reality resulting in a high quality exquisite furnishings as
+                        unique as every MadMellow
+                        client.
+                    </p>
+                </div>
+                <div class="box2">
+                    <h3 >We are <span class="madAnimation"><img src="./img/mad_anim_PETIT.gif" alt="anim-mad"></span> about design</h3>
+                    <h5>We <span class="loveAnimation"><img src="./img/love_anim_PETIT.gif" alt="anim-mad"></span> to challenge our imagination and to create is our motivation.</h5>
+                    <p> 
+                        Madmellow is an unique and individual approach to design and to furnish.
+                        Specialized in creating concept designs for the hospitality sector and contract projects.
+                        We care to create innovative and individual locations, which distinguish themselves
+                        through their design and functionality
+                        From the initial idea to the final realization of your project,
+                        we accompany you.
+                    </p>
+                </div>
+                <div class="box3">
+                    <h3 data-aos="fade-right" >How we work</h3>
+                    <div class="container-grid">
+                        <div class="grids-item item1"></div>
+                        <div class="grids-item item2"></div>
+                        <div class="grids-item item3"></div>
+                    </div>
+                    <p>
+                        Working from our design studio based in Luxembourg city,
+                        We are ready to accompany our clients in generating new ideas,
+                        To develop innovative concepts, to design custom-built furniture
+                        To achieve your project
+                        Coming soon ......
+                        individual design for individual thinkers
+                    </p>
+                </div>
+            </div>
+            
         </div>
-        <div class="slider-area">
-            <div>
-                <div class="card-box">
-                    <div class="card-props">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ea illo, repudiandae vero
-                            pariatur nesciunt dicta accusamus delectus error eligendi. Id repellendus impedit soluta
-                            consequuntur non sunt error incidunt nostrum?</p>
-                    </div>
-                    <div class="card-props-profil">
-                        <img src="./img/monials1.jpg" alt="profil-img1"><span>Author Name</span>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="card-box">
-                    <div class="card-props">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ea illo, repudiandae vero
-                            pariatur nesciunt dicta accusamus delectus error eligendi. Id repellendus impedit soluta
-                            consequuntur non sunt error incidunt nostrum?</p>
-                    </div>
-                    <div class="card-props-profil">
-                        <img src="./img/monials2.jpg" alt="profil-img2"><span>Author Name</span>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="card-box">
-                    <div class="card-props">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ea illo, repudiandae vero
-                            pariatur nesciunt dicta accusamus delectus error eligendi. Id repellendus impedit soluta
-                            consequuntur non sunt error incidunt nostrum?</p>
-                    </div>
-                    <div class="card-props-profil">
-                        <img src="./img/monials1.jpg" alt="profil-img3"><span>Author Name</span>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="card-box">
-                    <div class="card-props">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ea illo, repudiandae vero
-                            pariatur nesciunt dicta accusamus delectus error eligendi. Id repellendus impedit soluta
-                            consequuntur non sunt error incidunt nostrum?</p>
-                    </div>
-                    <div class="card-props-profil">
-                        <img src="./img/monials2.jpg" alt="profil-img4"><span>Author Name</span>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="card-box">
-                    <div class="card-props">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ea illo, repudiandae vero
-                            pariatur nesciunt dicta accusamus delectus error eligendi. Id repellendus impedit soluta
-                            consequuntur non sunt error incidunt nostrum?</p>
-                    </div>
-                    <div class="card-props-profil">
-                        <img src="./img/monials1.jpg" alt="profil-img5"><span>Author Name</span>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="card-box">
-                    <div class="card-props">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ea illo, repudiandae vero
-                            pariatur nesciunt dicta accusamus delectus error eligendi. Id repellendus impedit soluta
-                            consequuntur non sunt error incidunt nostrum?</p>
-                    </div>
-                    <div class="card-props-profil">
-                        <img src="./img/monials2.jpg" alt="profil-img6"><span>Author Name</span>
-                    </div>
-                </div>
-            </div>
+    </section>
 
-        </div>
-
-    </section> -->
 
     <section id="contact">
         <div class="contact-container">
             <div class="get-in-touch-box">
                 <div class="contact-box-title">
                     <h3>Get in touch !</h3>
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente a nostrum cumque commodi soluta
-                        dolorum laboriosam doloribus dolor neque iusto, nihil cum quam qui necessitatibus eaque. Fugiat
-                        sequi temporibus necessitatibus.</p> -->
                 </div>
                 <form action="" class="contact-form">
                     <input type="text" placeholder="Your name" class="name-input" required>
@@ -306,19 +247,16 @@
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#portfolio">Portfolio</a>
-            <!-- <a href="#">Blog</a> -->
             <a href="./pages/contact.html">Contact</a>
         </div>
         <div class="social-media">
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-youtube"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
         </div>
         <span class="signature"> &copy; Madmellow 2020 .All Rights Reserved .Design by VIZIR ARTS</span>
     </footer>
-
-
-
 
     <!--Jquery-->
     <script src="./js/jquery-3.5.1.min.js"></script>
