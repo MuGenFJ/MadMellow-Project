@@ -16,7 +16,7 @@ body {
 .navi-container {
   position: fixed;
   width: 100%;
-  height: 100px;
+  height: 120px;
   background: rgba(0, 0, 0, 0.829);
   z-index: 2;
   overflow: hidden;
@@ -39,14 +39,15 @@ body {
 }
 
 .navi-bar .logo img {
-  width: 90px;
+  width: 110px;
   height: auto;
-  margin: 0 10px;
+  margin: 0 25px;
   transition: all 0.8s ease-in-out;
 }
-@media (max-width: 480px) {
+@media (max-width: 550px) {
   .navi-bar .logo img {
-    width: 70px;
+    width: 75px;
+    margin: 0 5px;
   }
 }
 
@@ -148,7 +149,7 @@ img.burgerBtn-hover {
 }
 
 #overlay-navigation.active {
-  top: 54%;
+  top: 420px;
 }
 
 .links {
@@ -227,6 +228,7 @@ img.burgerBtn-hover {
   background-size: 550px;
   position: relative;
   transition: background 0.5s linear;
+  z-index: 0;
 }
 
 @media (max-width: 1000px) {
@@ -265,16 +267,23 @@ img.burgerBtn-hover {
 
 .info-title {
   position: absolute;
-  width: 40%;
+  width: 45%;
   color: black;
   left: 0%;
   top: 20%;
   margin-left: 20px;
 }
 
+.info-title .madAnimation img {
+  width: 50px;
+}
+.info-title .loveAnimation img {
+  width: 20px;
+}
+
 @media (max-width: 980px) {
   .info-title {
-    width: 60%;
+    width: 80%;
     color: black;
     left: 0%;
     top: 15%;
@@ -297,7 +306,13 @@ img.burgerBtn-hover {
   text-transform: uppercase;
   font-size: 0.9rem;
   letter-spacing: 8px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+}
+
+.info-title h4 {
+  font-style: italic;
+  margin-bottom: 5px;
+  font-size: 0.8rem;
 }
 
 .info-title h3 {
@@ -305,19 +320,9 @@ img.burgerBtn-hover {
   font-size: 2.3rem;
   margin-bottom: 15px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 380px) {
   .info-title h3 {
-    font-size: 2rem;
-  }
-}
-@media (max-width: 830px) {
-  .info-title h3 {
-    font-size: 1.5rem;
-  }
-}
-@media (max-width: 350px) {
-  .info-title h3 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -406,7 +411,7 @@ img.burgerBtn-hover {
   font-size: 15rem;
   width: 100%;
   opacity: 0.1;
-  color: #003c87;
+  color: #0253b6;
   -moz-user-select: none; /* Firefox */
   -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
   -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
@@ -447,31 +452,23 @@ img.burgerBtn-hover {
   }
 }
 
-.about-title .box2 {
-  margin-top: 20px;
-}
-
-.about-title .box2 .madAnimation img {
-  width: 40px;
-}
-.about-title .box2 .loveAnimation img {
-  width: 22px;
-  height: 12px;
-  margin: 0 3px;
-}
-
-.about-title .box2 h5 {
-  font-size: 0.8rem;
-}
-@media (max-width: 500px) {
-  .about-title .box2 h5 {
-    font-size: 0.7rem;
-  }
-}
-
 .box3 h3 {
   margin: 20px 0;
   text-transform: uppercase;
+}
+
+.box3 button {
+  padding: 10px 30px;
+  margin-top: 5px;
+  background-color: #003c87;
+  color: white;
+  text-transform: uppercase;
+  border: 1px solid white;
+  cursor: pointer;
+  letter-spacing: 3px;
+}
+.box3 button:hover {
+  text-decoration: underline;
 }
 
 .container-grid {
@@ -1288,11 +1285,15 @@ ul.filter-menu li span:hover {
 
 .coming-soon {
   background-color: black;
-  height: 90vh;
+  color: white;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.coming-soon {
-  color: white;
+
+.coming-soon p {
+  text-align: center;
+  font-size: 0.9rem;
 }
