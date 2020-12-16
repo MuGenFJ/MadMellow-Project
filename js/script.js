@@ -87,16 +87,18 @@ const home = document.getElementById('home');
 const homebg = document.getElementById('sectionbg');
 const aboutbg = document.getElementById('about');
 const portfolio = document.getElementById('portfolio');
-//   const testimonials = document.getElementById('testimonials');
 const contact = document.getElementById('contact');
 const projects = document.getElementById('projects');
+const madAnim = document.getElementById('madAnimation');
+const loveAnim = document.getElementById('loveAnimation');
 
 checkbox.addEventListener('change', () => {
 	homebg.classList.toggle('dark');
 	aboutbg.classList.toggle('dark');
 	home.classList.toggle('dark');
 	portfolio.classList.toggle('dark');
-	//   testimonials.classList.toggle('dark');
 	contact.classList.toggle('dark');
+	madAnim.classList.toggle('dark');
+	loveAnim.classList.toggle('dark');
 	// projects.classList.toggle('dark');
 });

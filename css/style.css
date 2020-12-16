@@ -274,11 +274,23 @@ img.burgerBtn-hover {
   margin-left: 20px;
 }
 
-.info-title .madAnimation img {
-  width: 50px;
+.info-title #madAnimation {
+  width: 120px;
+  margin-top: 10px;
+  margin-right: 5px;
 }
-.info-title .loveAnimation img {
-  width: 20px;
+
+.info-title #loveAnimation {
+  width: 30px;
+  margin-top: 2px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.info-title #loveAnimation.dark {
+  filter: invert(100%);
+}
+.info-title #madAnimation.dark {
+  filter: invert(100%);
 }
 
 @media (max-width: 980px) {
@@ -313,12 +325,16 @@ img.burgerBtn-hover {
   font-style: italic;
   margin-bottom: 5px;
   font-size: 0.8rem;
+  display: flex;
+  align-items: center;
 }
 
 .info-title h3 {
   text-transform: uppercase;
   font-size: 2.3rem;
   margin-bottom: 15px;
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 380px) {
   .info-title h3 {
