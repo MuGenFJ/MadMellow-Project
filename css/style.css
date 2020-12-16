@@ -282,9 +282,10 @@ img.burgerBtn-hover {
 
 .info-title #loveAnimation {
   width: 30px;
-  margin-top: 2px;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  position: relative;
+  top: 2px;
 }
 .info-title #loveAnimation.dark {
   filter: invert(100%);
@@ -323,10 +324,7 @@ img.burgerBtn-hover {
 
 .info-title h4 {
   font-style: italic;
-  margin-bottom: 5px;
   font-size: 0.8rem;
-  display: flex;
-  align-items: center;
 }
 
 .info-title h3 {
